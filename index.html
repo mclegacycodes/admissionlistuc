@@ -65,6 +65,21 @@
             
     </section>
 
+    <!-- creating the popup box -->
+    <div id="pop-wrapper">
+        <section class="container mx-auto" id="pop">
+            <div class="tile col-12 col-md-10 shadow mx-auto pb-5">
+                    <h3 id="instruct-heading">Instructions</h3>
+                        <p>1. You can search using first name only, surname only, programme only, OR a combination of any of them</p>
+                        <p>2. You will need your applicant reference number in order to print your letter.</p>
+                        <p>3. If you applied as a mature student, please use your index number given during the entrance examination.</p>
+                        <input type="button" value="OK" id="pop-btn" onclick="fadeout()" >
+                    </div>
+                
+                
+        </section>
+    </div>
+
 <!-- 
     creating the search results section -->
     <section class="container row mx-auto mb-5 mt-5" id="search-bar-container">
@@ -79,5 +94,23 @@
             <p id="error-message" class="col-10 mx-auto col-md-10 col-sm-12">Sorry, No records match your search</p>
         </table>
     </div>
+
+
+
+
+    <!-- addding javascript to fade out the instructions -->
+    <script>
+        var obj = document.querySelector("#pop-wrapper");
+        var btn =document.getElementById("pop-btn");
+        // btn.addEventListener('click',fadeout());
+        function fadeout(){
+            
+            obj.style.opacity=0;
+            obj.style.visibility='hidden';
+        }
+    </script>
 </body>
 </html>
+
+
+<!-- so help me God -->
