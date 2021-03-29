@@ -64,6 +64,7 @@ h3>a{
     background-color: black;
     padding: 0;
     position: relative;
+    overflow: hidden;
 }
 
 #hero-image{
@@ -80,7 +81,7 @@ h3>a{
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-190px,60px);
+    transform: translate(-90px,60px);
     
 }
 .tile{
@@ -219,7 +220,7 @@ font-weight: 700;
 
 #landing-items{
     
-    /* transform: translate(-50px,10px); */
+    transform: translate(-50px,10px);
 
 
 }
